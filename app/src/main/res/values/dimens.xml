@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tvRightAddressMargin">115dp</dimen>
+    <dimen name="smallButtonWidth">130dp</dimen>
+    <dimen name="smallButtonHeight">55dp</dimen>
+    <dimen name="mediumButtonWidth">200dp</dimen>
+    <dimen name="mediumButtonHeight">55dp</dimen>
+    <dimen name="edittextHeight">60sp</dimen>
+    <dimen name="buttonCorners">10dp</dimen>
+
+    <dimen name="spacing_between_columns">8dp</dimen> <!-- Adjust this value as per your requirement -->
+
+</resources>

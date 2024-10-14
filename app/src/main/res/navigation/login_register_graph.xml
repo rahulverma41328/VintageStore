@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_register_graph"
+    app:startDestination="@id/accountOptionsFragment">
+
+    <fragment
+        android:id="@+id/accountOptionsFragment"
+        android:name="com.example.vintagestore.fragments.auth.AccountOptionsFragment"
+        android:label="AccountOptionsFragment" >
+        <action
+            android:id="@+id/action_accountOptionsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_accountOptionsFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.vintagestore.fragments.auth.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:popUpTo="@id/accountOptionsFragment"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/introductionFragment"
+        android:name="com.example.vintagestore.fragments.auth.IntroductionFragment"
+        android:label="IntroductionFragment" >
+        <action
+            android:id="@+id/action_introductionFragment_to_accountOptionsFragment"
+            app:destination="@id/accountOptionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.vintagestore.fragments.auth.RegisterFragment"
+        android:label="RegisterFragment" >
+
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/accountOptionsFragment"/>
+    </fragment>
+</navigation>
