@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -28,7 +29,19 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/bungee"
-            android:text="room for rent" />
+            android:text="Vintage Store" />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/splash_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bungee"
+            android:text="Buy and Sell old things" />
+
+
 
     </RelativeLayout>
 

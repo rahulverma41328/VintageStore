@@ -2,4 +2,13 @@
     <string name="app_name">Vintage Store</string>
     <string name="tagline">Vintage Store</string>
     <string name="tagline2">Buy or Sell old accessories</string>
+
+    <string-array name="product_category_list">
+        <item>clothes</item>
+        <item>shoes</item>
+        <item>accessories</item>
+        <item>electronic</item>
+        <item>other</item>
+    </string-array>
+
 </resources>

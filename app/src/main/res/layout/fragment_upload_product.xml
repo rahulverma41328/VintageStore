@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.github.leandroborgesferreira.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/btnUploadProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        app:spinning_bar_color="@color/white"
+        style="@style/blueButtonStyle"
+        android:text="Upload" />
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnUploadProduct"
+        android:id="@+id/edProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/editText"
+        android:padding="10dp"
+        android:hint="product name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/g_gray500"
+        android:textAlignment="textStart"/>
+
+    <Spinner
+        android:id="@+id/edProductCategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittextHeight"
+        android:layout_below="@+id/edProductName"
+        style="@style/editText"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/editText"
+        android:layout_below="@+id/edProductCategory"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:hint="product price"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:textColorHint="@color/g_gray500"
+        android:textAlignment="textStart"/>
+
+    <LinearLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edProductPrice"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/imageFromStorage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            style="@style/blueButtonStyle"
+            android:text="Product Images" />
+
+
+        <TextView
+            android:id="@+id/tvNoOfImages"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_thin"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+            android:layout_height="wrap_content"
+            android:hint="selected images" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/tvView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/imageLayout"
+        android:background="@color/g_gray500"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvView"
+        style="@style/editText"
+        android:padding="10dp"
+        android:background="#00FFFFFF"
+        android:textColor="@color/black"
+        android:hint="product description"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/g_gray500"
+        android:textAlignment="textStart"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

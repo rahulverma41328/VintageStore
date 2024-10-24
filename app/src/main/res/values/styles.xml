@@ -40,6 +40,8 @@
             <item name="android:gravity">center</item>
             <item name="singleLine">true</item>
             <item name="android:textStyle">bold</item>
+            <item name="android:textColor">@color/black</item>
+            <item name="hintTextColor">@color/g_gray500</item>
             <item name="android:fontFamily">@font/poppins_light</item>
         </style>
 

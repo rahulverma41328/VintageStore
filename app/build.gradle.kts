@@ -53,6 +53,7 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database)
     implementation(libs.firebase.firestore)
+    implementation(libs.firebase.storage.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -77,7 +78,7 @@ dependencies {
     implementation ("de.hdodenhof:circleimageview:3.1.0")
 
     //viewpager2 indicator
-    // implementation ("io.github.vejei.viewpagerindicator:viewpagerindicator:1.0.0-alpha.1")
+    implementation ("androidx.viewpager2:viewpager2:1.1.0")
 
     //stepView
 

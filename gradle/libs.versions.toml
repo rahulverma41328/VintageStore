@@ -13,6 +13,8 @@ googleGmsGoogleServices = "4.4.2"
 firebaseAuth = "23.0.0"
 firebaseDatabase = "21.0.0"
 firebaseFirestore = "25.1.0"
+viewpagerindicator = "1.0.0-alpha.1"
+firebaseStorageKtx = "21.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -26,6 +28,8 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+viewpagerindicator = { module = "io.github.vejei.viewpagerindicator:viewpagerindicator", version.ref = "viewpagerindicator" }
+firebase-storage-ktx = { group = "com.google.firebase", name = "firebase-storage-ktx", version.ref = "firebaseStorageKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

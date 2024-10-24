@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login_register_graph"
-    app:startDestination="@id/accountOptionsFragment">
+    app:startDestination="@id/introductionFragment">
 
     <fragment
         android:id="@+id/accountOptionsFragment"
         android:name="com.example.vintagestore.fragments.auth.AccountOptionsFragment"
-        android:label="AccountOptionsFragment" >
+        android:label="AccountOptionsFragment"
+        tools:layout="@layout/fragment_account_options">
         <action
             android:id="@+id/action_accountOptionsFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
@@ -18,7 +20,8 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.vintagestore.fragments.auth.LoginFragment"
-        android:label="LoginFragment" >
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment"
@@ -28,7 +31,8 @@
     <fragment
         android:id="@+id/introductionFragment"
         android:name="com.example.vintagestore.fragments.auth.IntroductionFragment"
-        android:label="IntroductionFragment" >
+        android:label="IntroductionFragment"
+        tools:layout="@layout/fragment_introduction">
         <action
             android:id="@+id/action_introductionFragment_to_accountOptionsFragment"
             app:destination="@id/accountOptionsFragment" />
@@ -36,11 +40,12 @@
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.vintagestore.fragments.auth.RegisterFragment"
-        android:label="RegisterFragment" >
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
 
         <action
             android:id="@+id/action_registerFragment_to_loginFragment"
             app:destination="@id/loginFragment"
-            app:popUpTo="@id/accountOptionsFragment"/>
+            app:popUpTo="@id/accountOptionsFragment" />
     </fragment>
 </navigation>
